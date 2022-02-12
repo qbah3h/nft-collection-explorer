@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const tokenElement = document.getElementById("nft_template").content.cloneNode(true)
             tokenElement.querySelector("h1").innerText = tokenMetadata["name"]
-            tokenElement.querySelector("a").href = `https://opensea.io/assets/0x45db714f24f5a313569c41683047f1d49e78ba07/${tokenId}`
+            tokenElement.querySelector("a").href = `https://opensea.io/assets/${contract_address}/${tokenId}`
             tokenElement.querySelector("img").src = tokenMetadata["image"]
             tokenElement.querySelector("img").alt = tokenMetadata["description"]
 
