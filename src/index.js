@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const token_abi = document.getElementById("token_abi").value
         const contract_address = document.getElementById("contract_address").value
         if(!token_abi) {
-            token_abi = TokenABI
+            token_abi = '' + TokenABI + ''
         }
         if(!contract_address) {
             contract_address = '0x45DB714f24f5A313569c41683047f1d49e78Ba07'
