@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     document.getElementById("load_button").addEventListener("click", async () => {
         const walletAddress = document.getElementById("wallet_address").value
-        let token_abi = document.getElementById("token_abi").value
+        let token_abi = JSON.parse(document.getElementById("token_abi").value)
         let contract_address = document.getElementById("contract_address").value
         if(!token_abi) {
             token_abi = TokenABI
