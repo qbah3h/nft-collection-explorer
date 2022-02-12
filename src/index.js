@@ -1,4 +1,4 @@
-import SpacePunksTokenABI from "token_abi.js"
+import SpacePunksTokenABI from "./token_abi.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     const web3 = new Web3(window.ethereum)
