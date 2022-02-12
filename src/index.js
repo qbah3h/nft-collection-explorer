@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const tokenMetadata = await fetch(tokenMetadataURI).then((response) => response.json())
+            console.log(tokenMetadata)
 
             const tokenElement = document.getElementById("nft_template").content.cloneNode(true)
             tokenElement.querySelector("h1").innerText = tokenMetadata["name"]
