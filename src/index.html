@@ -11,15 +11,21 @@
 </head>
 
 <body class="h-full bg-gray-700">
-
     <main class="p-10 flex justify-center min-h-full">
+
         <div class="w-4/5">
             <div class="mb-10">
                 <input type="text" id="wallet_address" autofocus autocomplete="off"
                     value="0x80efF130ddE6223a10e6ab27e35ee9456b635cCD" placeholder="Wallet address"
                     class="w-2/5 border-2 border-blue-500 px-4 py-1 uppercase rounded-md text-xl text-blue-800 font-semibold outline-none">
+                <br><input type="text" id="token_abi" autofocus autocomplete="off" value=""
+                    placeholder="NFT Collection ABI"
+                    class="w-2/5 border-2 border-blue-500 px-4 py-1 uppercase rounded-md text-xl text-blue-800 font-semibold outline-none">
+                <br><input type="text" id="contract_address" autofocus autocomplete="off" value=""
+                    placeholder="Contract Address"
+                    class="w-2/5 border-2 border-blue-500 px-4 py-1 uppercase rounded-md text-xl text-blue-800 font-semibold outline-none">
 
-                <button id="load_button"
+                <br><button id="load_button"
                     class="border-2 border-blue-500 bg-blue-700 text-white transition-colors px-4 outline-none py-1 uppercase rounded-md text-xl font-semibold">
                     Load NFT Collection
                 </button>
