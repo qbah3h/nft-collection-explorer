@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(contract_address)
         if(!token_abi) {
             token_abi = TokenABI
+        } else {
+            token_abi = JSON.parse(token_abi)
         }
         if(!contract_address) {
             contract_address = '0x45DB714f24f5A313569c41683047f1d49e78Ba07'
