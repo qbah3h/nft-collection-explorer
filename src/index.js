@@ -5,15 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
     
     document.getElementById("load_button").addEventListener("click", async () => {
         const walletAddress = document.getElementById("wallet_address").value
-        let token_abi = JSON.parse(document.getElementById("token_abi").value)
+        let token_abi = document.getElementById("token_abi").value
         let contract_address = document.getElementById("contract_address").value
+        console.log(token_abi)
+        console.log(contract_address)
         if(!token_abi) {
             token_abi = TokenABI
         }
         if(!contract_address) {
             contract_address = '0x45DB714f24f5A313569c41683047f1d49e78Ba07'
         }
-
+        console.log(token_abi)
+        console.log(contract_address)
         const contract = new web3.eth.Contract(token_abi, contract_address)
         contract.defaultAccount = walletAddress
         const walletBalance = await contract.methods.balanceOf(walletAddress).call()
