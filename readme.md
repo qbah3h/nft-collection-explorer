@@ -1,6 +1,6 @@
 This app retrieves all NFT from a wallet using web3 JS library and OpenSea API.
 
-Heroku live app: https://ntf-collection-explorer.herokuapp.com/
+Heroku live app: https://nft-collection-explorer.herokuapp.com/
 
 Buildpack exctracted from: https://github.com/heroku/heroku-buildpack-static.git
 
